@@ -8,13 +8,13 @@ public class CodingProject {
 		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 		// Using the indexes of the array to subtract the first element from the last element in the array
 		int resultA = ages[ages.length -1] - ages[0];
-		System.out.println(resultA);
+		System.out.println("Result A: " + resultA);
 		
 		// New array of int called "ages"
-		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 105};
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 105};
 		// When using the indexes the subtraction works for arrays of different sizes
 		int resultB = ages2[ages2.length -1] - ages2[0];
-		System.out.println(resultB);
+		System.out.println("Result B: " + resultB);
 		
 		// Loop that iterates through the array "ages" and calculates the sum of all the elements
 		int sum = 0;
@@ -23,7 +23,7 @@ public class CodingProject {
 		}
 		// Calculating the average by dividing the sum by the length of the array
 		int average = sum / ages.length;
-		System.out.println(average);
+		System.out.println("Average: " + average);
 		
 		
 		// New array of String call "names"
@@ -38,7 +38,7 @@ public class CodingProject {
 		}
 		// Calculating the average by dividing the sum by the length of the array
 		averageNames = sumNames / names.length;
-		System.out.println(averageNames);
+		System.out.println("Average Names: " + averageNames);
 		
 		// New variable to set up a counter
 		int count = 1;
@@ -48,7 +48,7 @@ public class CodingProject {
 			combindedNames += name + " ";
 			count++;
 		}
-		System.out.println(combindedNames);
+		System.out.println("Combined Names: " + combindedNames);
 		
 		
 		
@@ -71,38 +71,38 @@ public class CodingProject {
 		for (int nameLength : nameLengths) {
 			sumNameLengths += nameLength;
 		}
-		System.out.println(sumNameLengths);
+		System.out.println("Sum Name Length: " + sumNameLengths);
 		
 		
 		
 		// Uses muliplyStrings method to return "Hello" concatenated to itself 3 times
-		System.out.println(multiplyStrings("Hello", 3));
+		System.out.println("Multiply Hello: " + multiplyStrings("Hello", 3));
 		
 		
 		
 		
 		// Uses fullName method to return a String of "Zack Minor"
-		System.out.println(fullName("Zack", "Minor"));
+		System.out.println("Full Name: " + fullName("Zack", "Minor"));
 		
 		
 		
 		
 		// Uses isGreaterThanOneHundred method to return true since 101 is greater than 100
 		int[] nums = {100,1};
-		System.out.println(isGreaterThanOneHundred(nums));
+		System.out.println("Is Greater than 100: " + isGreaterThanOneHundred(nums));
 		
 		
 		
 		// Uses averageArray method to return the average of the elements in array "nums2"
 		double[] nums2 = {100.0,1,5,25,89,70};
-		System.out.println(averageArray(nums2));
+		System.out.println("Average Array: " + averageArray(nums2));
 		
 		
 		
 		// Uses compareAverages method to return false because array1 is not greater than array2
 		double[] array1 = {100.0,1,5,25,89,70};
 		double[] array2 = {500,1,5,25,89,70};
-		System.out.println(compareAverages(array1, array2));
+		System.out.println("Compare Averages: " + compareAverages(array1, array2));
 		
 		
 		
@@ -113,7 +113,7 @@ public class CodingProject {
 		// Uses doesStringExist method to check if "Mary" exists in the array "team"
 		String[] team = {"Zack", "Jimmy", "Harry"};
 		boolean result = doesStringExist(team, "Mary");
-		System.out.println(result);
+		System.out.println("Result: " + result);
 
 
 		
